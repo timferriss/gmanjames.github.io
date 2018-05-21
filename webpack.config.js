@@ -6,7 +6,7 @@ module.exports = {
     output : {
         filename: 'main.js',
         path: path.resolve(__dirname, 'js'),
-        library: 'util'
+        library: 'page'
     },
     module : {
         rules: [

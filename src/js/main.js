@@ -1,9 +1,14 @@
-const styles = require('../sass/_variables.scss');
+const util = require('./modules/util.js');
+const page = window['page'] || {};
 
-const util = window['util'] || {};
 
-util.testConfig = () => {'use strict';
-    console.log(JSON.stringify(styles));
-}
+page.getMediaCardWidth = () => {'use strict';
+    return util.sassVar('mediaCardWidth');
+};
 
-module.exports = util;
+page.getMediaCardMargin = () => {
+    return util.sassVar('mediaCardMargin');
+};
+
+
+module.exports = page;
