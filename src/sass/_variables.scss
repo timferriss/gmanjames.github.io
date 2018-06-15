@@ -1,0 +1,14 @@
+// Typographical variables
+
+$base-font-size: 16px;
+
+
+// Card variables
+
+$media-card-width  : 240;
+$media-card-margin :  10;
+
+:export {
+    mediaCardWidth  : $media-card-width;
+    mediaCardMargin : $media-card-margin;
+}
